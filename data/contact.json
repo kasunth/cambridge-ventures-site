@@ -1,0 +1,26 @@
+{
+  "sectionLabel": "LET'S WORK TOGETHER",
+  "heading": "Contact Us",
+  "address": "3rd Floor, 50, Kitulwatte Road, Colombo 8, Sri Lanka",
+  "phones": ["(+94) 772 805 809", "(+94) 777 731 694"],
+  "email": "info@cambridge-ventures.com",
+  "whatsapp": "+94772805809",
+  "whatsappDisplay": "(+94) 772 805 809/ (+94) 777 731 694",
+  "socialLinks": {
+    "linkedin": "https://linkedin.com/company/cambridge-ventures",
+    "whatsapp": "https://wa.me/94772805809"
+  },
+  "footer": {
+    "copyright": "Copyright © 2025 Cambridge Ventures",
+    "ventureCapitalLinks": [
+      { "label": "About us", "url": "/venture-capital" },
+      { "label": "Careers", "url": "/careers" },
+      { "label": "Apply for funding/support", "url": "/venture-capital#contact" }
+    ],
+    "realEstateLinks": [
+      { "label": "About us", "url": "/real-estate" },
+      { "label": "Careers", "url": "/careers" },
+      { "label": "Our Projects", "url": "/real-estate#projects" }
+    ]
+  }
+}

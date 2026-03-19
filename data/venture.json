@@ -1,0 +1,60 @@
+{
+  "hero": {
+    "backgroundImage": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80",
+    "title": "Empowering",
+    "titleBold": "Entrepreneurs",
+    "title2": "and",
+    "title2Bold": "Enterprises",
+    "subtitle": "by providing capital, strategic guidance, and a robust network to fuel innovation and growth.",
+    "ctaText": "Apply for funding / support",
+    "ctaLink": "#contact"
+  },
+  "whatWeDo": {
+    "sectionLabel": "VENTURE CAPITAL",
+    "heading": "What We Do...",
+    "body": "We provide entrepreneurs and enterprises with funding, guidance, strategic connections and partnerships to grow their business into global powerhouses. We are open to engage in any industry and any stage of business."
+  },
+  "ticketSizes": {
+    "heading": "Our Ticket Sizes and Investment Stages",
+    "description": "We are open to investing in projects / enterprises having capital requirements ranging from US$ 10,000 (LKR 3 million) to US$ 100 Million+ (LKR 30 Billion), structured appropriately depending on the type, stage and scalability of the project / enterprise. We consider all stages including:",
+    "items": [
+      "Pre-launch",
+      "Seed stage",
+      "Series A, B, C, Pre-IPO and other",
+      "Other growth capital",
+      "Mature capital, Infrastructure Finance and Restructuring",
+      "Funding for Mergers and Acquisitions"
+    ]
+  },
+  "philosophy": {
+    "heading": "OUR INVESTMENT PHILOSOPHY",
+    "cards": [
+      {
+        "id": "phil-1",
+        "title": "Capital and More",
+        "description": "We believe that funding is just the beginning. We partner with founders to offer ongoing support, including strategic guidance, operational expertise, and access to a diverse network of industry leaders and potential customers."
+      },
+      {
+        "id": "phil-2",
+        "title": "Dynamic Team to Support You",
+        "description": "Our team with global expertise comprises both \"operators\" and \"investors\" which helps us create win-win situations. While having a breadth of experience including traditional industries, our team has operated and/or invested in cutting-edge domains."
+      },
+      {
+        "id": "phil-3",
+        "title": "Accelerated Global Access",
+        "description": "Our Venture Capital division specializes in helping companies to scale their operations and go global, transforming local ideas into international success stories. We provide strategic guidance and connections to a network of global partners."
+      },
+      {
+        "id": "phil-4",
+        "title": "Respecting and Supporting Entrepreneurs",
+        "description": "At the forefront of innovation and growth, our venture capital division prides itself on fostering an environment that truly respects and empowers entrepreneurs. We believe that successful partnerships are built on trust, collaboration, and a shared vision."
+      }
+    ]
+  },
+  "partnerCta": {
+    "heading": "PARTNER WITH US",
+    "body": "IF YOU ARE SEEKING SUPPORT TO GROW YOUR ENTERPRISE, WHETHER IT IS AN EARLY-STAGE STARTUP OR A WELL-ESTABLISHED OPERATION,",
+    "bodyBold": "WE INVITE YOU TO CONNECT WITH US AND EXPLORE HOW WE CAN WORK TOGETHER TO SHAPE THE FUTURE.",
+    "quote": "This commitment to respect and collaboration not only drives the success of our portfolio companies but also cultivates a vibrant ecosystem where creativity and entrepreneurship can thrive"
+  }
+}

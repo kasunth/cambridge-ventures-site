@@ -1,0 +1,46 @@
+{
+  "hero": {
+    "backgroundImage": "https://images.unsplash.com/photo-1449157291145-7efd050a4d0e?w=1920&q=80",
+    "title": "Transforming Real Estate:",
+    "subtitle": "Responsible Development with",
+    "subtitleBold": "Strategic Vision and Impact"
+  },
+  "whatWeDo": {
+    "sectionLabel": "REAL STATE",
+    "heading": "What We Do",
+    "body": "Our Real Estate division structures and executes development projects in a responsible and rewarding manner based on careful asset selection, optimal value addition, innovative financing structures and targeted marketing and sales strategies",
+    "valueAddition": {
+      "heading": "Our value-addition activities include the following",
+      "items": [
+        {
+          "id": "va-1",
+          "title": "Investments",
+          "description": "We invest in lands which we may either hold for a period of time or engage in property developments projects such as Gated Communities other Residential Projects"
+        },
+        {
+          "id": "va-2",
+          "title": "Joint Ventures",
+          "description": "Landowners who are interested in developing their properties are invited to contact us to explore potential collaborations"
+        },
+        {
+          "id": "va-3",
+          "title": "Structuring and Financing",
+          "description": "Create and structure investments in the Real Estate industry"
+        }
+      ]
+    }
+  },
+  "sellYourLand": {
+    "sectionLabel": "SELL YOUR LAND",
+    "heading": "Are you a landowner looking to sell your land?",
+    "description": "If you own bare land in suburbs",
+    "suburbs": "such as Kandana, Ja Ela, Negombo, Seeduwa, Katunayake, Kadawatha, Kaduwela, Pannipitiya, Moratuwa and Thalawathugoda",
+    "requirements": [
+      "Minimum 50 perch",
+      "Suitable for BLOCKING out",
+      "Clear Deeds",
+      "20ft width access road"
+    ],
+    "paymentNote": "We are able to pay the entire amount upfront for your land."
+  }
+}

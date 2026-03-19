@@ -1,0 +1,26 @@
+{
+  "sectionLabel": "OUR FOUNDERS",
+  "heading": "Leadership Team",
+  "members": [
+    {
+      "id": "member-1",
+      "name": "John Doe",
+      "title": "Co-founder",
+      "role": "Executive Chairman",
+      "committee": "Chairman - Investment Committee",
+      "photo": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80&fit=crop",
+      "bio": "Mr. John Doe has over 10 years of international experience in investment banking, asset management and digital finance.",
+      "readMoreLink": "#"
+    },
+    {
+      "id": "member-2",
+      "name": "Jane Smith",
+      "title": "Co-founder",
+      "role": "Managing Director",
+      "committee": "Vice Chairman - Investment Committee",
+      "photo": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80&fit=crop",
+      "bio": "Dr. Jane Smith is the owner and CEO of Innovest Investments (Private) Limited, an investment management company.",
+      "readMoreLink": "#"
+    }
+  ]
+}

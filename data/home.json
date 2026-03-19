@@ -1,0 +1,29 @@
+{
+  "hero": {
+    "backgroundImage": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&q=80",
+    "title": "The Leader in Alternative",
+    "titleBold": "Asset Investments",
+    "subtitle": "Built on uncompromising principles and unparalleled insights"
+  },
+  "divisions": {
+    "ventureCapital": {
+      "title": "Venture Capital",
+      "subtitle": "Funding, Growth and Partnerships",
+      "link": "/venture-capital"
+    },
+    "realEstate": {
+      "title": "Real Estate",
+      "subtitle": "Initiating, Structuring and Developing Projects",
+      "link": "/real-estate"
+    }
+  },
+  "whoWeAre": {
+    "sectionLabel": "ABOUT CAMBRIDGE VENTURES",
+    "heading": "Who We Are...",
+    "image": "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&q=80",
+    "description": "Cambridge Ventures brings unconventional yet high-yielding perspectives to Venture Capital and Real Estate industries and investments.",
+    "ventureCapital": "Our VENTURE CAPITAL division empowers entrepreneurs and enterprises by providing capital, strategic guidance, and a robust network to fuel innovation and growth. Our mission is to support groundbreaking ideas and ventures that are shaping the future across various industries and help grow them into global powerhouses. We welcome entrepreneurs and ventures at every stage of business growth.",
+    "realEstate": "Our REAL ESTATE division structures and executes development projects in a responsible and impactful manner based on careful asset selection, optimal value addition, innovative financing structures and targeted marketing and sales strategies.",
+    "closing": "We are a dynamic team powered by passion, innovation and creativity and our focus is on creating superior returns for all stakeholders through accelerated value addition and controlled risk."
+  }
+}

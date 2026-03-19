@@ -1,0 +1,20 @@
+{
+  "sectionLabel": "OUR PROJECTS",
+  "heading": "Our Projects",
+  "items": [
+    {
+      "id": "proj-1",
+      "title": "EMINENT RESIDENCES",
+      "location": "Seeduwa",
+      "images": ["https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=600&q=80"],
+      "description": ""
+    },
+    {
+      "id": "proj-2",
+      "title": "PARK RESIDENCES BY CAMBRIDGE",
+      "location": "Negombo",
+      "images": ["https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=600&q=80"],
+      "description": ""
+    }
+  ]
+}
