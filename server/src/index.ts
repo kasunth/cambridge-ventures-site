@@ -27,7 +27,7 @@ app.use('/api/contact', contactRoutes);
 // Serve React build in production
 const clientBuildPath = path.resolve(__dirname, '../../client/dist');
 app.use(express.static(clientBuildPath));
-app.get('*', (_req, res) => {
+app.get('{*path}', (_req, res) => {
   res.sendFile(path.join(clientBuildPath, 'index.html'));
 });
 
