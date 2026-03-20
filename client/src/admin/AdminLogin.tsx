@@ -29,10 +29,10 @@ export default function AdminLogin() {
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
         <div className="text-center mb-8">
           <div className="w-12 h-12 bg-gold-400 mx-auto flex items-center justify-center text-white font-bold text-xl rounded">
-            CV
+            LV
           </div>
           <h1 className="text-2xl font-heading font-semibold mt-4">Admin Login</h1>
-          <p className="text-gray-500 text-sm mt-1">Cambridge Ventures CMS</p>
+          <p className="text-gray-500 text-sm mt-1">Lex Ventures CMS</p>
         </div>
 
         <form onSubmit={handleSubmit} className="space-y-4">

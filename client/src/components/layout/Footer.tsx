@@ -18,16 +18,16 @@ export default function Footer({ content }: FooterProps) {
             <Link to="/" className="flex items-center gap-3 group mb-5">
               <div className="w-10 h-10 bg-gold-400 flex items-center justify-center">
                 <svg viewBox="0 0 40 40" className="w-6 h-6" fill="none">
-                  <path d="M8 8L20 4L32 8L36 20L32 32L20 36L8 32L4 20L8 8Z" stroke="white" strokeWidth="1.5" fill="none"/>
-                  <path d="M14 14L20 10L26 14V26L20 30L14 26V14Z" stroke="white" strokeWidth="1.5" fill="none"/>
+                  <text x="50%" y="54%" dominantBaseline="middle" textAnchor="middle" fill="white" fontSize="22" fontWeight="bold" fontFamily="serif">L</text>
+                  <rect x="4" y="4" width="32" height="32" rx="2" stroke="white" strokeWidth="1.5" fill="none"/>
                 </svg>
               </div>
               <div className="leading-tight">
-                <div className="text-[12px] font-bold tracking-[0.2em] text-gray-900">CAMBRIDGE</div>
+                <div className="text-[12px] font-bold tracking-[0.2em] text-gray-900">LEX</div>
                 <div className="text-[9px] tracking-[0.35em] text-gray-400 font-medium">VENTURES</div>
               </div>
             </Link>
-            <p className="text-[12px] text-gray-400 leading-relaxed">About Cambridge Ventures</p>
+            <p className="text-[12px] text-gray-400 leading-relaxed">About Lex Ventures</p>
           </div>
 
           {/* VC Links */}
