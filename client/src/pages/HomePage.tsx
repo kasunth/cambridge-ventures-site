@@ -87,30 +87,35 @@ export default function HomePage() {
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <p className="text-gray-400 text-[11px] tracking-[0.25em] uppercase mb-3">{team.sectionLabel}</p>
             <h2 className="text-4xl md:text-5xl mb-16">{team.heading}</h2>
-            <div className="grid md:grid-cols-2 gap-16 max-w-4xl">
+            <div className="grid md:grid-cols-2 gap-12 max-w-5xl">
               {team.members.map(member => (
-                <div key={member.id} className="group">
-                  <div className="w-full aspect-[3/4] bg-gray-100 rounded-lg mb-6 overflow-hidden shadow-md">
+                <div key={member.id} className="group relative">
+                  <div className="w-full aspect-[3/4] bg-gray-100 rounded-lg overflow-hidden shadow-md relative">
                     {member.photo ? (
                       <img
                         src={member.photo}
                         alt={member.name}
-                        className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
+                        className="w-full h-full object-cover"
                       />
                     ) : (
                       <div className="w-full h-full bg-gradient-to-b from-gray-200 to-gray-300" />
                     )}
+                    {/* Dark gradient overlay at bottom */}
+                    <div className="absolute inset-x-0 bottom-0 h-[55%] bg-gradient-to-t from-black/80 via-black/50 to-transparent" />
+                    {/* Text overlaid on photo */}
+                    <div className="absolute inset-x-0 bottom-0 p-6 text-white">
+                      <h3 className="text-xl font-heading font-semibold">{member.name}</h3>
+                      <p className="text-gold-300 text-[12px] font-semibold mt-1">{member.title}</p>
+                      <p className="text-white/80 text-[12px]">{member.role}</p>
+                      <p className="text-white/60 text-[11px]">{member.committee}</p>
+                      <p className="text-white/70 text-[12px] mt-2 leading-relaxed line-clamp-3">{member.bio}</p>
+                      {member.readMoreLink && (
+                        <a href={member.readMoreLink} className="text-gold-300 text-[12px] mt-1.5 inline-block hover:text-gold-200 transition-colors">
+                          Read more...
+                        </a>
+                      )}
+                    </div>
                   </div>
-                  <h3 className="text-xl font-heading font-semibold text-gray-900">{member.name}</h3>
-                  <p className="text-gold-400 text-[13px] font-semibold mt-0.5">{member.title}</p>
-                  <p className="text-gray-600 text-[13px]">{member.role}</p>
-                  <p className="text-gray-400 text-[12px]">{member.committee}</p>
-                  <p className="text-gray-500 text-[13px] mt-3 leading-relaxed">{member.bio}</p>
-                  {member.readMoreLink && (
-                    <a href={member.readMoreLink} className="text-gold-400 text-[13px] mt-2 inline-block hover:text-gold-500 transition-colors">
-                      Read more...
-                    </a>
-                  )}
                 </div>
               ))}
             </div>

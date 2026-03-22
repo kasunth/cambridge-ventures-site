@@ -16,22 +16,22 @@ export default function CareersPage() {
   return (
     <div>
       {/* Hero */}
-      <HeroBanner backgroundImage={careers.hero.backgroundImage || undefined} overlayOpacity="bg-black/60">
-        <div>
-          <h1 className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.2] tracking-tight max-w-3xl">
-            {careers.hero.title}<br />
-            <span className="font-bold text-4xl md:text-5xl lg:text-6xl">{careers.hero.titleBold}</span><br />
-            <span className="text-xl md:text-2xl lg:text-3xl text-white/80 font-light">{careers.hero.subtitle}</span>
-          </h1>
+      <HeroBanner backgroundImage={careers.hero.backgroundImage || undefined} overlayOpacity="bg-black/55">
+        <div className="max-w-3xl">
+          <p className="text-white/90 text-lg md:text-xl lg:text-2xl font-light leading-snug">{careers.hero.title}</p>
+          <h1 className="text-4xl md:text-5xl lg:text-[3.5rem] text-white font-bold leading-[1.1] mt-1">{careers.hero.titleBold}</h1>
+          <p className="text-white/70 text-xl md:text-2xl lg:text-3xl font-light mt-1 leading-snug">{careers.hero.subtitle}</p>
         </div>
       </HeroBanner>
 
       {/* Highlight Banner */}
       <section className="bg-gold-400">
         <div className="max-w-7xl mx-auto px-6 lg:px-8 py-10">
-          <p className="text-white text-xl md:text-2xl font-heading leading-relaxed max-w-3xl">
-            {careers.hero.highlightText}<br />
-            and possess a <strong>{careers.hero.closing.replace('and possess a ', '').replace('.', '')}</strong>.
+          <h2 className="text-white text-2xl md:text-3xl font-heading leading-snug max-w-3xl">
+            {careers.hero.highlightText}
+          </h2>
+          <p className="text-white text-xl md:text-2xl font-heading leading-snug mt-1">
+            and possess a <strong>strong work ethic.</strong>
           </p>
         </div>
       </section>

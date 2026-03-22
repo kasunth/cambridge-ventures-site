@@ -29,14 +29,14 @@ export default function Navbar() {
             <div className="relative">
               <div className="w-11 h-11 bg-gold-400 flex items-center justify-center">
                 <svg viewBox="0 0 40 40" className="w-7 h-7" fill="none">
-                  <text x="50%" y="54%" dominantBaseline="middle" textAnchor="middle" fill="white" fontSize="22" fontWeight="bold" fontFamily="serif">L</text>
-                  <rect x="4" y="4" width="32" height="32" rx="2" stroke="white" strokeWidth="1.5" fill="none"/>
+                  <polygon points="20,6 34,20 28,20 20,12 12,20 6,20" fill="white"/>
+                  <polygon points="12,22 20,30 28,22 34,22 20,36 6,22" fill="white" opacity="0.6"/>
                 </svg>
               </div>
             </div>
             <div className="leading-tight">
-              <div className="text-[13px] font-bold tracking-[0.2em] text-gray-900">LEX</div>
-              <div className="text-[10px] tracking-[0.35em] text-gray-400 font-medium">VENTURES</div>
+              <div className="text-[14px] font-bold tracking-[0.18em] text-gray-900">LEX</div>
+              <div className="text-[9px] tracking-[0.35em] text-gray-400 font-medium">VENTURES</div>
             </div>
           </Link>
 

@@ -18,8 +18,8 @@ export default function Footer({ content }: FooterProps) {
             <Link to="/" className="flex items-center gap-3 group mb-5">
               <div className="w-10 h-10 bg-gold-400 flex items-center justify-center">
                 <svg viewBox="0 0 40 40" className="w-6 h-6" fill="none">
-                  <text x="50%" y="54%" dominantBaseline="middle" textAnchor="middle" fill="white" fontSize="22" fontWeight="bold" fontFamily="serif">L</text>
-                  <rect x="4" y="4" width="32" height="32" rx="2" stroke="white" strokeWidth="1.5" fill="none"/>
+                  <polygon points="20,6 34,20 28,20 20,12 12,20 6,20" fill="white"/>
+                  <polygon points="12,22 20,30 28,22 34,22 20,36 6,22" fill="white" opacity="0.6"/>
                 </svg>
               </div>
               <div className="leading-tight">

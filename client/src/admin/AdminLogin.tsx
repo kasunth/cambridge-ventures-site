@@ -28,8 +28,11 @@ export default function AdminLogin() {
     <div className="min-h-screen bg-gray-100 flex items-center justify-center">
       <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
         <div className="text-center mb-8">
-          <div className="w-12 h-12 bg-gold-400 mx-auto flex items-center justify-center text-white font-bold text-xl rounded">
-            LV
+          <div className="w-12 h-12 bg-gold-400 mx-auto flex items-center justify-center rounded">
+            <svg viewBox="0 0 40 40" className="w-7 h-7" fill="none">
+              <polygon points="20,6 34,20 28,20 20,12 12,20 6,20" fill="white"/>
+              <polygon points="12,22 20,30 28,22 34,22 20,36 6,22" fill="white" opacity="0.6"/>
+            </svg>
           </div>
           <h1 className="text-2xl font-heading font-semibold mt-4">Admin Login</h1>
           <p className="text-gray-500 text-sm mt-1">Lex Ventures CMS</p>

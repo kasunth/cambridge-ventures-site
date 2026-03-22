@@ -1,4 +1,3 @@
-import HeroBanner from '../components/layout/HeroBanner';
 import ContactSection from '../components/layout/ContactSection';
 import { useContent } from '../hooks/useContent';
 import { VentureContent, ContactContent } from '../types/content';
@@ -15,23 +14,33 @@ export default function VentureCapitalPage() {
 
   return (
     <div>
-      {/* Hero */}
-      <HeroBanner backgroundImage={vc.hero.backgroundImage || undefined} overlayOpacity="bg-black/55">
-        <div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.15] tracking-tight">
+      {/* Hero - Split Layout */}
+      <section className="min-h-[70vh] grid md:grid-cols-2 mt-20">
+        {/* Left - Text */}
+        <div className="flex flex-col justify-center px-6 lg:px-16 py-16">
+          <h1 className="text-3xl md:text-4xl lg:text-[2.75rem] leading-[1.2] tracking-tight">
             {vc.hero.title} <span className="font-bold">{vc.hero.titleBold}</span><br />
             {vc.hero.title2} <span className="font-bold">{vc.hero.title2Bold}</span>
           </h1>
-          <p className="text-white/70 mt-5 text-base font-light tracking-wide">{vc.hero.subtitle}</p>
-          <p className="text-white font-semibold mt-8 text-[15px]">Need to fast-track your growth?</p>
+          <p className="text-gray-500 mt-5 text-[14px] leading-relaxed max-w-md">{vc.hero.subtitle}</p>
+          <p className="text-gray-900 font-semibold mt-8 text-[15px]">Need to fast-track your growth?</p>
           <a
             href={vc.hero.ctaLink}
-            className="inline-block mt-4 bg-gold-400 text-white px-10 py-3.5 text-sm font-semibold tracking-wide hover:bg-gold-500 transition-colors duration-300"
+            className="inline-block mt-4 bg-gold-400 text-white px-10 py-3.5 text-sm font-semibold tracking-wide hover:bg-gold-500 transition-colors duration-300 self-start"
           >
             {vc.hero.ctaText}
           </a>
         </div>
-      </HeroBanner>
+        {/* Right - Image */}
+        <div
+          className="min-h-[400px] md:min-h-0 grayscale"
+          style={{
+            backgroundImage: `url(${vc.hero.backgroundImage})`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+        />
+      </section>
 
       {/* What We Do */}
       <section className="py-24">
@@ -56,21 +65,21 @@ export default function VentureCapitalPage() {
       {/* Ticket Sizes */}
       <section className="py-24">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-16 items-center">
-            <div className="rounded-lg overflow-hidden shadow-lg">
+          <div className="grid md:grid-cols-2 gap-16 items-start">
+            <div className="overflow-hidden shadow-lg">
               <img
                 src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&q=80"
                 alt="Investment analytics"
-                className="w-full aspect-[4/3] object-cover"
+                className="w-full aspect-[4/3] object-cover grayscale"
               />
             </div>
             <div>
-              <h3 className="text-3xl font-heading font-semibold mb-4">{vc.ticketSizes.heading}</h3>
+              <h3 className="text-2xl md:text-3xl font-heading font-semibold mb-5">{vc.ticketSizes.heading}</h3>
               <p className="text-[14px] text-gray-600 leading-[1.8] mb-8">{vc.ticketSizes.description}</p>
               <ul className="space-y-3">
                 {vc.ticketSizes.items.map((item, i) => (
                   <li key={i} className="flex items-center gap-3 text-gray-700 text-[14px]">
-                    <span className="w-2 h-2 bg-gold-400 rounded-full shrink-0" />
+                    <span className="w-1.5 h-1.5 bg-gray-800 rounded-full shrink-0" />
                     {item}
                   </li>
                 ))}
@@ -83,12 +92,12 @@ export default function VentureCapitalPage() {
       {/* Investment Philosophy */}
       <section className="py-24 bg-dark-600 text-white">
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <h2 className="text-3xl md:text-4xl text-center mb-16 text-white">{vc.philosophy.heading}</h2>
+          <h2 className="text-2xl md:text-3xl text-center mb-16 text-white tracking-wide uppercase">{vc.philosophy.heading}</h2>
           <div className="grid md:grid-cols-2 gap-px bg-white/10">
             {vc.philosophy.cards.map(card => (
               <div key={card.id} className="p-10 bg-dark-600">
-                <h4 className="text-lg font-heading font-semibold mb-4 text-gold-400">{card.title}</h4>
-                <p className="text-gray-300 text-[14px] leading-[1.8]">{card.description}</p>
+                <h4 className="text-lg font-heading font-semibold mb-4 text-white">{card.title}</h4>
+                <p className="text-gray-400 text-[13px] leading-[1.8]">{card.description}</p>
               </div>
             ))}
           </div>
@@ -98,19 +107,19 @@ export default function VentureCapitalPage() {
       {/* Quote */}
       <section className="py-14 bg-dark-700">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <p className="text-white/70 italic text-[15px] leading-relaxed font-light">{vc.partnerCta.quote}</p>
+          <p className="text-white/60 italic text-[14px] leading-relaxed font-light">{vc.partnerCta.quote}</p>
         </div>
       </section>
 
       {/* Partner CTA */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-heading font-semibold mb-2 inline-block">
+          <h2 className="text-2xl md:text-3xl font-heading font-semibold mb-2 tracking-wide uppercase">
             {vc.partnerCta.heading}
           </h2>
-          <div className="w-24 h-0.5 bg-gold-400 mx-auto mt-3 mb-8" />
-          <p className="text-gray-500 text-[13px] uppercase tracking-[0.15em]">
-            {vc.partnerCta.body} <strong className="text-gray-700">{vc.partnerCta.bodyBold}</strong>
+          <div className="w-20 h-0.5 bg-gold-400 mx-auto mt-3 mb-8" />
+          <p className="text-gray-500 text-[12px] uppercase tracking-[0.12em] leading-relaxed">
+            {vc.partnerCta.body} <strong className="text-gray-800">{vc.partnerCta.bodyBold}</strong>
           </p>
         </div>
       </section>

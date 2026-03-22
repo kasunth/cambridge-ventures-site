@@ -19,9 +19,9 @@ export default function RealEstatePage() {
     <div>
       {/* Hero */}
       <HeroBanner backgroundImage={re.hero.backgroundImage || undefined} overlayOpacity="bg-black/55">
-        <div>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-white leading-[1.15] tracking-tight">
-            {re.hero.title}<br />
+        <div className="max-w-3xl">
+          <p className="text-white/80 text-lg md:text-xl font-light mb-1">{re.hero.title}</p>
+          <h1 className="text-3xl md:text-4xl lg:text-5xl text-white leading-[1.15] tracking-tight">
             {re.hero.subtitle}<br />
             <span className="font-bold">{re.hero.subtitleBold}</span>
           </h1>
